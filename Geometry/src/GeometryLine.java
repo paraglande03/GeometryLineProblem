@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.Integer;
 
 public class GeometryLine {
     public static void main(String[] args) {
@@ -40,6 +41,17 @@ public class GeometryLine {
             System.out.println("Lines are not equal");
         }
 
+
+        Integer Length1= (int) lengthLine1;
+        Integer Length2= (int )lengthLine2;
+        int result= Length1.compareTo(Length2);
+        System.out.println(result);
+        if (result==0)
+            System.out.println("equals");
+        else if (result>0)
+            System.out.println("Line 1 is greater");
+        else
+            System.out.println("Line 2 is greater");
     }
 
 }
